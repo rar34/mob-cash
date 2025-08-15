@@ -11,26 +11,30 @@
 
 <body>
     <main class="flex justify-center">
-        <div class="mockup-phone bg-white min-h-[900px] w-[450px]">
+        <div class="mockup-phone bg-white">
             <div class="mockup-phone-camera"></div>
-            <div class="hero bg-base-200">
+            <div class="mockup-phone-display grid place-content-center">
+                <div class="hero bg-base-200">
                 <div class="hero-content flex-col">
                     <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
                         <div class="card-body">
-                            <fieldset class="fieldset">
+                            <form class="">
                                 <label class="label">Mobile number</label>
-                                <input type="text" class="input" placeholder="Your mobile number" />
+                                <input id="phone-number" type="text" class="input mb-4" placeholder="Your mobile number" required/>
                                 <label class="label">Pin</label>
-                                <input type="password" class="input" placeholder="4 digit pin" />
-                                <div><a class="link link-hover">Forgot password?</a></div>
-                                <button class="btn btn-neutral mt-4">Login</button>
-                            </fieldset>
+                                <input id="pin-number" type="password" class="input" placeholder="4 digit pin" required />
+                                <div><a class="link link-hover">Forgot pin?</a></div>
+                                <button id="btn-login" class="btn w-full bg-[#0874F2] text-white mt-4">Login</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </main>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>
