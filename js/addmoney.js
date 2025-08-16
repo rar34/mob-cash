@@ -1,6 +1,8 @@
 document.getElementById('add-money').addEventListener('click', function(){
     const addMoneyForm = document.getElementById('add-money-form');
+    const cashoutForm = document.getElementById('cashout-form');
     addMoneyForm.classList.remove('hidden');
+    cashoutForm.classList.add('hidden')
    
 })
 
