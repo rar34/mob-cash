@@ -54,7 +54,7 @@
                     <p class="text-[080808] opacity-70">Add Money</p>
                 </div>
                 <!-- Cashout -->
-                <div
+                <div id="cashout"
                     class="flex flex-col items-center border border-[080808] px-3 py-6 hover:cursor-pointer hover:bg-gray-200 rounded-xl">
                     <img class="w-6" src="/assets/send1.png" alt="">
                     <p class="text-[080808] opacity-70">Cashout</p>
@@ -98,11 +98,25 @@
                     <button id="btn-add-money" class="btn w-full bg-[#0874F2] text-white mt-4">Add Money</button>
                 </form>
             </div>
+            <!-- cashout form -->
+            <div id="add-money-form" class="card-body my-14">
+                <h1 class="text-2xl font-bold">Cashout</h1>
+                <div class="divider"></div>
+                <form class="">
+                    <label class="label text-black">Amount</label>
+                    <input id="amount" type="text" class="input w-full mb-4" placeholder="Your amount" required /> <br>
+                    <label class="label text-black">Pin</label> <br>
+                    <input id="pin-number" type="password" class="input w-full" placeholder="4 digit pin" required />
+                    <!-- <div><a class="link link-hover">Forgot pin?</a></div> -->
+                    <button id="btn-add-money" class="btn w-full bg-[#0874F2] text-white mt-4">Cashout</button>
+                </form>
+            </div>
         </div>
     </main>
 
     <script src="js/logout.js"></script>
     <script src="js/addmoney.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 
 </html>
