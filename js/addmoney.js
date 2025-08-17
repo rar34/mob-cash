@@ -28,7 +28,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(e){
         totalAmountElement.innerText = totalAmount;
 
         const p = document.createElement('p');
-        p.classList.add('text-gray-400 my-2')
+        p.classList.add('text-gray-400')
         p.innerText = `Added: $${amount}, Total amount = $${totalAmount}`;
 
         document.getElementById('transaction-container').appendChild(p);
