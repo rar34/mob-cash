@@ -22,6 +22,10 @@ document.getElementById('btn-cashout').addEventListener('click', function (e) {
         return
     }
     if (pin === '1234') {
+        if(totalAmount < amount){
+            alert('You do not have enough money')
+            return
+        }
         totalAmount = totalAmount - amount;
         totalAmountElement.innerText = totalAmount;
         const p = document.createElement('p');
