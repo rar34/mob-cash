@@ -27,7 +27,11 @@ document.getElementById('btn-add-money').addEventListener('click', function(e){
         totalAmount = totalAmount + amount;
         totalAmountElement.innerText = totalAmount;
 
-        const p = document.createElement('p')
+        const p = document.createElement('p');
+        p.classList.add('text-gray-400 my-2')
+        p.innerText = `Added: $${amount}, Total amount = $${totalAmount}`;
+
+        document.getElementById('transaction-container').appendChild(p);
     }
     else{
         alert('wrong pin')
