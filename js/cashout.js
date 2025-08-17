@@ -17,6 +17,10 @@ document.getElementById('btn-cashout').addEventListener('click', function (e) {
     const totalAmountElement = document.getElementById('total-amount');
     let totalAmount = parseInt(totalAmountElement.innerText);
 
+    if(isNaN(amount)){
+        alert('you do not enter valid amount');
+        return
+    }
     if (pin === '1234') {
         totalAmount = totalAmount - amount;
         totalAmountElement.innerText = totalAmount;
